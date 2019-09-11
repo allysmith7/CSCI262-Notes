@@ -23,3 +23,31 @@ Queues are **FIFO**, or first in first out, so things are added to the end and t
 - `.front()` will show the item at the front, but leave it in the queue
 - Most easily built using `.add_to_back()` and `.remove_from_front()`
 - Can be used practically for print jobs, process scheduling, I/O request scheduling, event handling
+
+## Depth-First Search
+
+- Uses a stack, or recursive :thinking:
+
+    ```c++
+    stack.push(head);
+    while (!stack.isEmpty()) {
+        node n = pop();
+        n -> visited = true;
+        // push adjacent vertices onto stack
+        stack.push(n.adjacent());
+    }
+    ```
+
+## Breadth-First Search
+
+- Uses a queue, can't be recursive
+
+```c++
+queue.push(head);
+while (!queue.isEmpty()) {
+    node n = pop();
+    n -> visited = true;
+    queue.push(n.adjacent);
+}
+```
+
