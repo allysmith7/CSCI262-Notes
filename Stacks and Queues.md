@@ -2,8 +2,6 @@
 
 These data structures are easily built using a LinkedList as the backing structure
 
-------
-
 ## Stacks
 
 Stacks are **LIFO**, or last in first out, which means the item that is added last is the first item to be removed from the list.
